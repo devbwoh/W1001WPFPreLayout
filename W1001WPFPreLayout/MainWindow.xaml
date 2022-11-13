@@ -7,26 +7,20 @@
         mc:Ignorable="d"
         Title="레이아웃" Height="450" Width="800">
     <Border Padding="5" Background="LightGray">
-        <StackPanel Orientation="Vertical">
-            <StackPanel.Background>
-                <ImageBrush ImageSource="/건담5호기4.jpg" Stretch="UniformToFill" Opacity="0.7" TileMode="Tile"/>
-            </StackPanel.Background>
-            <Button Content="눌러주세요"/>
-            <Button>또 눌러주세요</Button>
-            <StackPanel Orientation="Horizontal">
-                <Button Content="인사" Click="OnButton"/>
-                <Label x:Name="MyLabel" Content="안녕하세요" FontWeight="Bold"/>
-            </StackPanel>
-            <Button Content="눌러주세요"/>
-            <TextBlock Text="WPF" 
-                            HorizontalAlignment="Center" 
-                            FontSize="22" 
-                            Foreground="Yellow"/>
-            <UniformGrid Rows="1">
-                <Button Content="버튼 1" Margin="10"/>
-                <Button Content="버튼 2" Margin="10"/>
-                <Button Content="버튼 3" Margin="10"/>
-            </UniformGrid>
-        </StackPanel>
+        <DockPanel>
+            <Button Content="위쪽" DockPanel.Dock="Top"/>
+            <Button Content="왼쪽" DockPanel.Dock="Left"/>
+            <Button Content="위쪽 3" DockPanel.Dock="Top"/>
+            <Button Content="오른" DockPanel.Dock="Right"/>
+            <Button Content="위쪽 2" DockPanel.Dock="Top"/>
+            <Button Content="오른 2" DockPanel.Dock="Right"/>
+            <Button Content="아래" DockPanel.Dock="Bottom"/>
+            <Button Content="왼쪽 2" DockPanel.Dock="Left"/>
+            <Button Content="아래 2" DockPanel.Dock="Bottom"/>
+            <Button Content="버튼 5"/>
+            <Button Content="버튼 6"/>
+            <Button Content="버튼 7"/>
+            <Button Content="버튼 8"/>
+        </DockPanel>
     </Border>
 </Window>

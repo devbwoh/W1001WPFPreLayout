@@ -25,9 +25,9 @@ namespace W1001WPFPreLayout
             InitializeComponent();
         }
 
-        private void OnButton(object sender, RoutedEventArgs e)
-        {
-            MyLabel.Content = "오랜 만입니다.";
-        }
+        //private void OnButton(object sender, RoutedEventArgs e)
+        //{
+        //    MyLabel.Content = "오랜 만입니다.";
+        //}
     }
 }
